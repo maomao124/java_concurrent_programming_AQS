@@ -46,7 +46,7 @@ public class MyLock implements Lock
     @Override
     public void unlock()
     {
-        sync.tryRelease(1);
+        sync.release(1);
     }
 
     @Override
